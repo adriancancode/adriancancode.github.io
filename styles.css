@@ -1,0 +1,116 @@
+header {
+    width: 100%;
+}
+html {
+    background: linear-gradient(135deg, rgb(135, 23, 200), blue 50%, rgb(174, 0, 255));
+    color: blac;
+}
+.tab {
+    float: right;
+}
+.center {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+h1 {
+    text-align: center;
+    font-family: FreeMono, monospace;
+    font-size: 10em;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.about-me {
+    border-bottom: 7px solid #b9b9b9;
+    border-left: 7px solid #b9b9b9;
+    border-right: 7px solid #b9b9b9;
+    background-color: white; 
+}
+.skills {
+    border-bottom: 7px solid #b9b9b9;
+    border-left: 7px solid #b9b9b9;
+    border-right: 7px solid #b9b9b9;
+    background-color: white;
+}
+.experience {
+    border-bottom: 7px solid #b9b9b9;
+    border-left: 7px solid #b9b9b9;
+    border-right: 7px solid #b9b9b9;
+    background-color: white;
+}
+
+.testimonials {
+    border-bottom: 7px solid #b9b9b9;
+    border-left: 7px solid #b9b9b9;
+    border-right: 7px solid #b9b9b9;
+    background-color: white;
+}
+.contact {
+    border-bottom: 7px solid #b9b9b9;
+    border-left: 7px solid #b9b9b9;
+    border-right: 7px solid #b9b9b9;
+    background-color: white;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, rgb(135, 23, 200), blue 50%, rgb(174, 0, 255));
+    color: white;
+}
+
+
+h2 {
+    font-size: 2em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #b9b9b9;
+
+}
+h3 {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p, label{
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace
+    
+}
+
+form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contacts {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.fa-circle-xmark {
+    color: red;
+}
+.fa-circle-minus{
+    color: yellow;
+}
+.fa-circle-plus {
+    color: green;
+}
+
+.fa-envelope {
+    color: #2eb0f6;
+}
+
+.fa-linkedin {
+    color: #526de4;
+}
+.fa-instagram {
+    color: #de40d6;
+}
+.fa-discord {
+    color: #8f5be8;
+}
