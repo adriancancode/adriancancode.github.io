@@ -17,10 +17,13 @@ html {
 img {
     border-radius: 20px;
 }
+img[src="myself.jpg"] {
+    width: 600px;
+}
 /* For headers (sorted by heiarchy), paragraph elements, and bullet points. */
 h1 {
     text-align: center;
-    font-family: FreeMono, monospace;
+    font-family: 'Courier New';
     font-size: 10em;
     border-bottom: 2px solid white;
     color: white;
