@@ -1,9 +1,9 @@
+/* Styles for header, html file, section tabs, and centered items.*/
 header {
     width: 100%;
 }
 html {
     background: linear-gradient(135deg, rgb(135, 23, 200), blue 50%, rgb(174, 0, 255));
-    color: blac;
 }
 .tab {
     float: right;
@@ -14,6 +14,10 @@ html {
   margin-right: auto;
   width: 50%;
 }
+img {
+    border-radius: 20px;
+}
+/* For headers (sorted by heiarchy), paragraph elements, and bullet points. */
 h1 {
     text-align: center;
     font-family: FreeMono, monospace;
@@ -22,83 +26,96 @@ h1 {
     color: white;
 }
 
-.about-me {
-    border-bottom: 7px solid #b9b9b9;
-    border-left: 7px solid #b9b9b9;
-    border-right: 7px solid #b9b9b9;
-    background-color: white; 
-}
-.skills {
-    border-bottom: 7px solid #b9b9b9;
-    border-left: 7px solid #b9b9b9;
-    border-right: 7px solid #b9b9b9;
-    background-color: white;
-}
-.experience {
-    border-bottom: 7px solid #b9b9b9;
-    border-left: 7px solid #b9b9b9;
-    border-right: 7px solid #b9b9b9;
-    background-color: white;
-}
-
-.testimonials {
-    border-bottom: 7px solid #b9b9b9;
-    border-left: 7px solid #b9b9b9;
-    border-right: 7px solid #b9b9b9;
-    background-color: white;
-}
-.contact {
-    border-bottom: 7px solid #b9b9b9;
-    border-left: 7px solid #b9b9b9;
-    border-right: 7px solid #b9b9b9;
-    background-color: white;
-}
-
-input[type="submit"]:hover {
-    background: linear-gradient(135deg, rgb(135, 23, 200), blue 50%, rgb(174, 0, 255));
-    color: white;
-}
-
-
 h2 {
     font-size: 2em;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    background-color: #b9b9b9;
+    background-color: #d6d6d6;
 
 }
 h3 {
+    
     text-align: center;
+    text-decoration: underline;
     font-size: 1.5em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-p, label{
+p, li{
     font-size: 20px;
-    font-family:'Courier New', Courier, monospace
-    
+    font-family:'Courier New', Courier, monospace;
 }
 
-form {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+/* For each section, classed as whatever the section contains. */
+.about-me {
+    border-bottom: 7px solid #d6d6d6;
+    border-left: 7px solid #d6d6d6;
+    border-right: 7px solid #d6d6d6;
+    background-color: white; 
 }
 
-.contacts {
-    margin: auto;
+.hobbies img {
     width: 50%;
-    padding: 10px;
+    max-width: 300px;
+    height: 400px;
+}
+.skills {
+    border-bottom: 7px solid #d6d6d6;
+    border-left: 7px solid #d6d6d6;
+    border-right: 7px solid #d6d6d6;
+    background-color: white;
+}
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+.travel img {
+  width: 50%;
+  max-width: 300px;
+  height: 300px;
+}
+.experience {
+    border-bottom: 7px solid #d6d6d6;
+    border-left: 7px solid #d6d6d6;
+    border-right: 7px solid #d6d6d6;
+    background-color: white;
 }
 
+.work-photos img {
+    width: 100%;
+  max-width: 350px;
+  height: 300px;
+}
+
+.testimonials {
+    border-bottom: 7px solid #d6d6d6;
+    border-left: 7px solid #d6d6d6;
+    border-right: 7px solid #d6d6d6;
+    background-color: white;
+}
+.contact {
+    border-bottom: 7px solid #d6d6d6;
+    border-left: 7px solid #d6d6d6;
+    border-right: 7px solid #d6d6d6;
+    background-color: white;
+}
+
+
+
+
+/* For all icons used from fontawesome; tab buttons(for decoration) and contact method icons.*/
 .fa-circle-xmark {
-    color: red;
+    color: #e94646;
 }
 .fa-circle-minus{
-    color: yellow;
+    color: #ebda5d;
 }
 .fa-circle-plus {
-    color: green;
+    color: #8ee041;
 }
 
 .fa-envelope {
@@ -111,6 +128,10 @@ form {
 .fa-instagram {
     color: #de40d6;
 }
-.fa-discord {
-    color: #8f5be8;
+.fa-phone {
+    color: #6ea925;
+}
+
+.fa-envelope, .fa-linkedin, .fa-github, .fa-instagram, .fa-phone {
+    margin: 10px;
 }
