@@ -150,6 +150,9 @@ p {
     color: #6ea925;
 }
 
-.fa-envelope, .fa-linkedin, .fa-github, .fa-instagram, .fa-phone {
+.fa-envelope, .fa-linkedin, .fa-github, .fa-instagram, .fa-phone .fa-file {
     margin: 10px;
+}
+.fa-file {
+    color: #108ee1;
 }
