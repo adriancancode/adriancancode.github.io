@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Adrian Vazquez</title>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <!-- For special icons on page. -->
         <script src="https://kit.fontawesome.com/52fbf2ec79.js" crossorigin="anonymous"></script>
@@ -12,164 +13,170 @@
             <h1>Adrian Vazquez</h1>
         </header>
         <img src="pictures/myself.jpg" alt="Picture of myself" class="center">
-
-        <!-- Short summary of myself; hobbies, travel, goal of portfolio. -->
         
-        <div class="section about-me">
-            <h2>>> Hello World </h2>
-            
-            <p>
-            Welcome to my portfolio.  I am a computer science student who is planning to specialize in full-stack development.
-            Feel free to scroll and familiarize yourself with me and my current achievements.
-            </p>
-            <p>
-                In this first window, you will get a short insight into
-                my life!
-            </p>
-            <h3>About Me</h3>
-            <p>I am from Pico Rivera, a city 15 miles from Downtown Los Angeles.
-                I started my coding journey in my freshman year of college at
-                California State University, Fullerton (CSUF).  In a matter of months,
-                I have fallen in love with the creation of software and the broad range of
-                ideas technology has brought into my life.
-            </p>
-            <h3>Some fun hobbies</h3>
-            <div class="hobbies">
-                <img src="pictures/guitar.jpg" alt="Yours truly playing a geetar while wearing a mask">
-                <p>Playing the guitar</p>
-                <img src="pictures/snowboarding.jpg" alt="Me on a ski lift">
-                <p>Snowboarding</p>
-                <img src="pictures/gym.jpg" alt="Me at the gym lifting heavy circles">
-                <p>Going to the gym</p>
-        </div>
-            <h3>Favorite places I've traveled to</h3>
-            <p>📍 Nashville, TN</p>
-            <div class="flexbox travel">
-                <img src="pictures/jack_daniel.jpg" alt="Statue of Jack Daniel">
-                <img src="pictures/opry.jpg" alt="Front entrance of Grand Ole Opry">
-                <img src="pictures/ryman.jpg" alt="Inside of Ryman Auditorium">
+            <div class="tabs">
+                <span data-tab-value="#tab_1">About Me</span>
+                <span data-tab-value="#tab_2">Skills</span>
+                <span data-tab-value="#tab_3">Projects</span>
+                <span data-tab-value="#tab_4">Experience</span>
+                <span data-tab-value="#tab_5">Testimonials</span>
+                <span data-tab-value="#tab_6">Contact</span>
             </div>
-            <p>📍 Puerto Vallarta, MX</p>
-            <div class="flexbox travel">
-                <img src="pictures/coatis.jpg">
-                <img src="pictures/caletas.jpg">
-                <img src="pictures/seahorse.jpg">
-            </div>
-            <p>📍 Pismo Beach, CA</p>
-            <div class="flexbox travel">
-                <img src="pictures/hearst_castle.jpg" alt="Front of Hearst Castle">
-                <img src="pictures/chonky_seal.jpg" alt="Big sleeping elephant seal">
-                <img src="pictures/beach.jpg" alt="Shore of Pismo Beach">
-            </div>
-        </div>
-
-        <!-- Skills -->
-        <div class="section ">
-            
-            <h2>Technical skills</h2>
-            
-            <p>Here, you will see what technology, languages, and frameworks
-                have novice to expert experience in!
-            </p>
-            <h3>Languages</h3>
-            <div class="flexbox">
-                <img src="pictures/c++.png" alt="c++ logo">
-                <img src="pictures/python.jpg" alt="python logo">
-                <img src="pictures/java.png" alt="java logo">
-                 <img src="pictures/javascript.png"alt="javascript logo">    
-                <img src="pictures/html.png" alt="html logo">
-                <img src="pictures/css.png" alt="css logo">
-            </div>
-                
-            <h3>Frameworks</h3>
-            <div class="flexbox">
-                <img src="pictures/react.png" alt="react logo">
-            </div>
-                
-        </div>
-
-        <!-- Work experience -->
-        <div class="section">
-            
-            <h2>Projects and Experience</h2>
-            <p>
-                Check out this page for an overview of where I have applied my software 
-                skills and where I am currently working on them as of today!
-            </p>
-            <div class="work-photos">
-                <div class="flexbox">
-                    <img src="pictures/ACM.png" alt="ACM logo">
-                    <img src="pictures/acmdudes.jpg" alt="Me with people from ACM">
+            <div class="content">
+                <!-- Short summary of myself; hobbies, travel, goal of portfolio. -->
+                <div class="active" id="tab_1" data-tab-info> 
+                    <h2>>> Hello World </h2>
+                    <p>
+                        Welcome to my portfolio.  I am a computer science student who is planning to specialize in full-stack development.
+                        Feel free to scroll and familiarize yourself with me and my current achievements.
+                    </p>
+                    <p>
+                        In this first window, you will get a short insight into
+                        my life!
+                    </p>
+                    <h3>About Me</h3>
+                    <p>I am from Pico Rivera, a city approximately 15 miles from Downtown Los Angeles.
+                        I started my coding journey in my freshman year of college at
+                        California State University, Fullerton (CSUF).  In a matter of months,
+                        I have fallen in love with the creation of software and the broad range of
+                    ideas technology has brought into my life.
+                    </p>
+                    <h3>Some fun hobbies</h3>
+                    <div class="flexbox hobbies">
+                        <img src="pictures/guitar.jpg" alt="Yours truly playing a geetar while wearing a mask">
+                        
+                        <img src="pictures/snowboarding.jpg" alt="Me on a ski lift">
+                        
+                        <img src="pictures/gym.jpg" alt="Me at the gym lifting heavy circles">
+                        
+                    </div>
+                    <h3>Favorite places I've traveled to</h3>
+                    <p>📍 Nashville, TN</p>
+                    <div class="flexbox travel">
+                        <img src="pictures/jack_daniel.jpg" alt="Statue of Jack Daniel">
+                        <img src="pictures/opry.jpg" alt="Front entrance of Grand Ole Opry">
+                        <img src="pictures/ryman.jpg" alt="Inside of Ryman Auditorium">
+                    </div>
+                    <p>📍 Puerto Vallarta, MX</p>
+                    <div class="flexbox travel">
+                        <img src="pictures/coatis.jpg" alt="Pack of coatimundis munching on bread">
+                        <img src="pictures/caletas.jpg" alt="Beach of Las Caletas private resort">
+                        <img src="pictures/seahorse.jpg" alt="Statue of a boy riding a seahorse">
+                    </div>
+                    <p>📍 Pismo Beach, CA</p>
+                    <div class="flexbox travel">
+                        <img src="pictures/hearst_castle.jpg" alt="Front of Hearst Castle">
+                        <img src="pictures/chonky_seal.jpg" alt="Big sleeping elephant seal">
+                        <img src="pictures/beach.jpg" alt="Shore of Pismo Beach">
+                    </div>
                 </div>
-                <p>Association for Computing Machinery (ACM) CSUF Chapter</p>
-                <ul>
-                    <li>Participating in weekly workshops with 30+ students a day based on UI/UX design, algorithms and data structures, and software development</li>
-                    <li>Collaborating with open source software team to formulate projects that enhance website and Discord accessibility</li>
-                </ul>
-                <div class="flexbox"><img src="pictures/fullyhacks.jpeg" alt="Fullyhacks 2024 logo"></div>
-                <p>Fullyhacks 2024</p>
-                <ul>
-                    <li>Annual 24-hour hackathon at CSUF campus</li>
-                    <li>Competed with over 300 participants in project-building and development for prizes</li>
-                </ul> 
-            </div>
-        </div>
+                <!-- Skills -->
+                <div id="tab_2" data-tab-info>
+                    <h2>Technical skills</h2>
+            
+                    <p>Here, you will see what technology, languages, and frameworks
+                        have novice to expert experience in!
+                    </p>
+                    <h3>Languages</h3>
+                    <div class="flexbox" id="languages">
+                        <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white">
+                        <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white">
+                        <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54">
+                        <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white">
+                        <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white">
+                        <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
+                    </div>
+                
+                    <h3>Frameworks</h3>
+                    <div class="flexbox">
+                        <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white">
+                        <img src="https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white">
+                    </div>
 
-        <!-- Testimonials -->
-        <div class="section testimonials">
-            <h2>Testimonials</h2>
-            <p>Feel free to hear what my past and present colleagues had to say about me!</p>
-            <!-- Used hobbies class for testimonial image for image dimension purposes. -->
-            <div class="flexbox hobbies"><img src="pictures/testimonial1.jpg"></div>
-            <p>"Adrian is a very dedicated and ambitious teammate.  He has made
+                </div>
+                <!-- Projects -->
+                <div id="tab_3" data-tab-info>
+                    <h2>Projects</h2>
+                    <p>
+                        Check out this page for an overview of where I have applied my software 
+                        skills and where I am currently working on them as of today!
+                    </p>
+                </div>
+                <!-- Work experience -->
+                <div id="tab_4" data-tab-info>
+                    <h2>Experience</h2>
+                    <div class="work-photos">
+                        <p>In this page, you will see my past and present workplaces and extracirriculars!</p>
+                        <div class="flexbox">
+                            <img src="pictures/ACM.png" alt="ACM logo">
+                            <img src="pictures/acmdudes.jpg" alt="Me with people from ACM">
+                        </div>
+                        <p style="text-align: center;">Association for Computing Machinery (ACM) CSUF Chapter (August 2023 - Present)</p>
+                        <p> As a member of the largest tech organization in the CSUF campus, I am currently contributing to the club's open source software team,
+                            where I aid in maintaining the club's website and 
+                        </p>
+                        <div class="flexbox"><img src="pictures/fullyhacks.jpeg" alt="Fullyhacks 2024 logo"></div>
+                        <p style="text-align: center;">Fullyhacks 2024</p>
+                        <ul>
+                            <li>Annual 24-hour hackathon at CSUF campus</li>
+                            <li>Competed with over 300 participants in project-building and development for prizes</li>
+                        </ul> 
+                        </p>
+                    </div>
+                </div>
+                <!-- Testimonials -->
+                <div id="tab_5" data-tab-info>
+                    <h2>Testimonials</h2>
+                    <p>Feel free to hear what my past and present colleagues had to say about me!</p>
+                    <!-- Used hobbies class for testimonial image for image dimension purposes. -->
+                    <div class="flexbox hobbies"><img src="pictures/testimonial1.jpg"></div>
+                        <p>"Adrian is a very dedicated and ambitious teammate.  He has made
                 very vital contributions to our open source software team and to ACM as a
                 whole.  If you need help with projects, advice on coding, or just someone to
                 make everlasting connections with, Adrian is the man for the job!"
                 - Evan Jimenez, Open Source Software Officer, ACM
-            </p>
-        </div>
+                        </p>
+                </div>
+                <!-- Contact info -->
+                <div id="tab_6" data-tab-info>
+                    <header>
+                        <h2>Contact Me</i></h2>
+                    </header>
+                    <p>
+                        Thank you for taking the time to check out my page!  Feel free to contact me 
+                        via any of the provided methods below to get to know me a bit better or build
+                        partnerships with me!  
+                    </p>
+                    
+                    <div class="flexbox" id="contact">
+                            <a href="mailto:vazqueza2004@gmail.com"><i class="fa-solid fa-envelope fa-2xl" style="color:#2eb0f6;"></i></a>
+                            <a href="https://www.linkedin.com/in/adrian-vazquez-0630b22a2/"><i class="fa-brands fa-linkedin fa-2xl" style="color: #526de4;"></i></a>
+                            <a href="https://github.com/adriancancode"><i class="fa-brands fa-github fa-2xl" style="color: black;"></i></a>
+                            <a href="https://www.instagram.com/vazquez.4drian/"><i class="fa-brands fa-instagram fa-2xl" style="color: #d538f5;"></i></a>
+                    </div>
+                </div>
+            
 
-        <!-- Contact methods -->
-        <div class="section contact">
-            <header>
-                <h2>Contact Me</i></h2>
-            </header>
-            <p>
-                Thank you for taking the time to check out my page!  Feel free to contact me 
-                via any of the provided methods below to get to know me a bit better or build
-                partnerships with me!  
-            </p>
-            
-            <div class="flexbox">
-            <div>
-                <i class="fa-solid fa-envelope fa-2xl"></i>
-                <a href="mailto:vazqueza2004@gmail.com"><p>Email</p></a>
-            </div>
-            
-            <div>
-                <i class="fa-brands fa-linkedin fa-2xl"></i>
-                <a href="https://www.linkedin.com/in/adrian-vazquez-0630b22a2/"><p>Linkedin</p></a>
-            </div>
-            <div>
-                <i class="fa-brands fa-github fa-2xl"></i>
-                <a href="https://github.com/adriancancode"><p>GitHub</p></a>
-            </div>
-            <div>
-                <i class="fa-brands fa-instagram fa-2xl"></i>
-                <a href="https://www.instagram.com/vazquez.4drian/"><p>Instagram</p></a>
-            </div>
-            <div>
-                <i class="fa-solid fa-file fa-2xl"></i>
-                <a href="Adrian Vazquez Resume.pdf" download><p>Resume</p></a>
-            </div>
-            
-            
-            
-            
-            
-            
-            </div>
-            
-        </div>
+        
+
+        
+        <!-- For content tabs -->
+        <script type="text/javascript">
+       
+            // function to get each tab details
+            const tabs = document.querySelectorAll('[data-tab-value]')
+            const tabInfos = document.querySelectorAll('[data-tab-info]')
+     
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const target = document
+                        .querySelector(tab.dataset.tabValue);
+                    tabInfos.forEach(tabInfo => {
+                        tabInfo.classList.remove('active')
+                    })
+                    target.classList.add('active');
+                })
+            })
+        </script>
     </body>
 </html>

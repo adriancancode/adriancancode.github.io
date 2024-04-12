@@ -3,20 +3,51 @@ header {
     width: 100%;
 }
 
-html {
+body {
     background: linear-gradient(135deg, rgb(135, 23, 200), blue 50%, rgb(174, 0, 255));
-}
-
-.tab {
-    float: right;
-    background-color: #d6d6d6;
 }
 
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 30%;
+}
+
+[data-tab-info] {
+    display: none;
+}
+
+.active[data-tab-info] {
+    display: block;
+}
+.tabs span {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 6px;
+    background-color: #d6d6d6;
+    transition: background-color 0.3s;
+}
+.tabs span:hover {
+    cursor: pointer;
+    background-color: #b0b0b0;
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 5px;
+    background-color: #d6d6d6;
+}
+
+.content {
+    border: 7px solid #d6d6d6;
+    border-top: 0;
+    background-color: white; 
+    height: 100vh;
+    padding: 0 30px;
+    overflow: auto;
 }
 
 img {
@@ -32,7 +63,6 @@ h1 {
     text-align: center;
     font-family: 'Courier New';
     font-size: 10em;
-    border-bottom: 2px solid white;
     color: white;
 }
 
@@ -50,34 +80,23 @@ h3 {
 }
 
 p, li{
-    font-size: 20px;
+    font-size: 18px;
     font-family:'Courier New', Courier, monospace;
 }
 
 p {
-  text-align: center;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 /* For each section, classed as whatever the section contains. */
-div.section {
-    border: 7px solid #d6d6d6;
-    border-top: 30px solid #d6d6d6;
-    background-color: white; 
-    margin: 100px auto;
-    width: 1000px;
-    height: 800px;
-   overflow: auto;
 
-}
 .hobbies img {
     width: 50%;
     max-width: 300px;
     height: 400px;
-    display: block;
+    display: inline;
     margin: 10px auto;
 }
 
@@ -106,34 +125,10 @@ div.section {
     border-radius: 50%;
 }
 
-/* For all icons used from fontawesome; tab buttons(for decoration) and contact method icons.*/
-.fa-circle-xmark {
-    color: #e94646;
+i{
+    margin: 50px;
+    transition: color 0.5s;
 }
-.fa-circle-minus{
-    color: #ebda5d;
-}
-.fa-circle-plus {
-    color: #8ee041;
-}
-
-.fa-envelope {
-    color: #2eb0f6;
-}
-
-.fa-linkedin {
-    color: #526de4;
-}
-.fa-instagram {
-    color: #de40d6;
-}
-.fa-phone {
-    color: #6ea925;
-}
-
-.fa-envelope, .fa-linkedin, .fa-github, .fa-instagram, .fa-phone .fa-file {
-    margin: 10px;
-}
-.fa-file {
-    color: #108ee1;
+i:hover {
+    color: black;
 }
