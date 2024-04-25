@@ -1,3 +1,6 @@
+
+
+
 /* Styles for header, html file, section tabs, self portrait, and centered items.*/
 header {
     width: 100%;
@@ -6,6 +9,7 @@ header {
 body {
     background: linear-gradient(135deg, rgb(135, 23, 200), blue 50%, rgb(174, 0, 255));
 }
+
 
 .center {
   display: block;
@@ -32,6 +36,7 @@ body {
     cursor: pointer;
     background-color: #b0b0b0;
 }
+
 .tabs {
     display: flex;
     justify-content: center;
@@ -45,18 +50,17 @@ body {
     border: 7px solid #d6d6d6;
     border-top: 0;
     background-color: white; 
-    height: 100vh;
+    height: 800px;
     padding: 0 30px;
     overflow: auto;
+    box-shadow: 5px 5px 5px #000000;
 }
 
 img {
     border-radius: 20px;
 }
 
-img[src="myself.jpg"] {
-    width: 500px;
-}
+
 
 /* For headers (sorted by heiarchy), paragraph elements, and bullet points. */
 h1 {
@@ -65,6 +69,8 @@ h1 {
     font-size: 10em;
     color: white;
 }
+
+
 
 h2 {
     font-size: 2em;
@@ -112,7 +118,7 @@ p {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 18px;
+    gap: 5px;
 }
 
 .work-photos img {
@@ -126,9 +132,26 @@ p {
 }
 
 i{
-    margin: 50px;
+    margin: 50px 10px;
     transition: color 0.5s;
 }
 i:hover {
     color: black;
+}
+#languages img {
+    transition: opacity 0.5s;
+}
+#languages img:hover {
+    opacity: 1;
+}
+.fade-in {
+    animation: fadeInAnimation ease 1s;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
