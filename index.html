@@ -5,7 +5,7 @@
         <title>Adrian Vazquez</title>
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
-        <!-- For special icons on page. -->
+        <!-- For icons on contacts page. -->
         <script src="https://kit.fontawesome.com/52fbf2ec79.js" crossorigin="anonymous"></script>
     </head>
     <body class="bg-gradient-to-r from-sky-500 to-indigo-500">
@@ -13,7 +13,7 @@
             <h1 class="fade-in">Adrian Vazquez</h1>
         </header>
         <img src="pictures/myself.jpg" alt="Picture of myself" class="center fade-in">
-        <!-- Navigation tabs. -->
+        
             <div class="tabs">
                 <span data-tab-value="#tab_1">About Me</span>
                 <span data-tab-value="#tab_2">Skills</span>
@@ -22,7 +22,7 @@
                 <span data-tab-value="#tab_6">Contact</span>
             </div>
             <div class="content">
-                <!-- Short summary of myself; hobbies, travel, goal of portfolio. -->
+                
                 <div class="active" id="tab_1" data-tab-info> 
                     <h2>>> Hello World </h2>
                     <p>
@@ -35,7 +35,7 @@
                     </p>
                     <h3>About Me</h3>
                     <p>I am from Pico Rivera, a city approximately 15 miles from Downtown Los Angeles.
-                        I started my coding journey in my freshman year of college at
+                        I started my coding journey in my freshman year at
                         California State University, Fullerton (CSUF).  In a matter of months,
                         I have fallen in love with the creation of software and the broad range of
                     ideas technology has brought into my life.
@@ -69,7 +69,8 @@
                         <img src="pictures/beach.jpg" alt="Shore of Pismo Beach">
                     </div>
                 </div>
-                <!-- Skills -->
+
+                
                 <div id="tab_2" data-tab-info>
                     <h2>Technical skills</h2>
             
@@ -90,36 +91,74 @@
                     <div class="flexbox">
                         <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white">
                         <img src="https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white">
+                        <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white">
                     </div>
 
                 </div>
-                <!-- Projects -->
+
+                
                 <div id="tab_3" data-tab-info>
                     <h2>Projects</h2>
                     <p>
                         Check out this page for an overview of where I have applied my software 
                         skills and where I am currently working on them as of today!
                     </p>
+                    <div class="flexbox" style="gap: 35px;">
+                        <div class="card">
+                            <div class="card-title">
+                                <h3>Chef-AI</h3>
+                            </div>
+                            <img src="pictures/chef-ai2.png" style="width: 100%;">
+                            <div class="card-text">
+                                <p>Next.JS recipe finder app submitted for my software engineering foundations class.  Utilizes the OpenAI API to 
+                                    fetch AI-generated recipes via user ingredient input.
+                                </p>
+
+                                <a href="https://github.com/guidoasbun/recipe-finder-se.git" style="display: inline;"><p>Github Repo</p></a>
+                                <a href="https://recipe-finder-se.vercel.app/" style="display: inline;"><p>Deployment site</p></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h3>Spring Fun Facts</h3>
+                            <img src="pictures/spring_facts.png" style="width: 100%;">
+                            <p>A silly and interactive website project made as a submission for 
+                                ACM CSUF BunnyHacks 2024.
+                            </p>
+                        </div>
+                        <div class="project-card"></div>
+                        <div class="project-card"></div>
+                    </div>
                 </div>
+
                 <!-- Work experience -->
                 <div id="tab_4" data-tab-info>
                     <h2>Experience</h2>
                     <div class="work-photos">
                         <p>In this page, you will see my past and present workplaces and extracirriculars!</p>
                         <div class="flexbox">
-                            <img src="pictures/ACM.png" alt="ACM logo">
-                            <img src="pictures/acmdudes.jpg" alt="Me with people from ACM">
+                            <div class="card">
+                                <h3 style="text-align: center;">Association for Computing Machinery (ACM) CSUF Chapter (August 2023 - Present)</h3>
+                                <div class="flexbox"><img src="pictures/ACM.png" style="width: 70%;" alt="ACM logo"></div>
+                                
+                                <p style="padding-bottom: 100px;"> As a member of the largest tech organization in the CSUF campus, I am currently contributing to the club's open source software team,
+                                    where I aid in maintaining the club's website and brainstorm ideas for future open source projects to benefit ACM's technical components.
+                                    I am also an officer for the club's marketing team, where I assist in spreading the word of the club's weekly workshops, events,
+                                    and career opportunities by means of social media(Instagram, TikTok), flyer-making, and photography.</p>
+                            </div>
+                            <div class="card">
+                                <h3 style="text-align: center;">Fullyhacks 2024</h3>
+                                <div class="flexbox">
+                                    <img src="pictures/fullyhacks.jpeg" alt="Fullyhacks 2024 logo" style="width: 70%;">
+                                </div>
+                                <p>On February 25th-26th, 2024, I participated in Cal State Fullerton's annual hackathon, with over 300 competitors across various Southern
+                                    California campuses, including Fullerton, UC Irvine, and UC Riverside.  
+                                </p>
+                            </div>
+                            <div class="card">
+                                <img src="pictures/bunnyhacks.png" style="width: 100%;">
+                            </div>
                         </div>
-                        <p style="text-align: center;">Association for Computing Machinery (ACM) CSUF Chapter (August 2023 - Present)</p>
-                        <p> As a member of the largest tech organization in the CSUF campus, I am currently contributing to the club's open source software team,
-                            where I aid in maintaining the club's website and brainstorm ideas for future open source projects to benefit the technical component of
-                            the club.
-                        </p>
-                        <div class="flexbox"><img src="pictures/fullyhacks.jpeg" alt="Fullyhacks 2024 logo"></div>
-                        <p style="text-align: center;">Fullyhacks 2024</p>
-                        <p>On February 25th-26th, 2024, I participated in Cal State Fullerton's annual hackathon, with over 300 competitors across various Southern
-                            California campuses, including Fullerton, UC Irvine, and UC Riverside.  
-                        </p>
+            
                         
                     </div>
                 </div>
